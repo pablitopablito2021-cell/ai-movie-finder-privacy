@@ -1,193 +1,199 @@
-# Privacy Policy for Ai Movie Finder
+# Privacy Policy
 
-**Effective date:** July 30, 2026
+**Movie Finder AI** for iPhone and **Ai Movie Finder** for Android
 
-**App name:** Ai Movie Finder (also referred to as Movie Finder)
+**Effective date:** November 19, 2026
 
-**Developer / Publisher:** Ai Movie Finder Studio
+**Publisher:** Ai Movie Finder Studio
 
-**Contact email:** moviefinderai.dev@gmail.com
+**Contact:** [moviefinderai.dev@gmail.com](mailto:moviefinderai.dev@gmail.com)
 
-Ai Movie Finder is an Android app that helps users identify movies and TV shows from short video clips. You can share clips or links from TikTok, Instagram, or Facebook, or upload a video from your device. This Privacy Policy explains what information the app collects, how it is used, and what choices you have.
+This policy covers the Movie Finder AI app for iPhone (App Store) and the Ai Movie Finder app for Android (Google Play), together called "the app". The app identifies movies and TV shows from short video clips. This policy explains what information the app handles, why, who receives it, how long it is kept, and what choices you have.
 
-## 1. Information we collect
+## Summary
 
-### Device / install identifier (no traditional account)
+- The app has no accounts. You never give us a name, email address or password to use it.
+- The clip you choose to scan is sent to our server and to AI providers only to identify the title. It is deleted after the scan.
+- History, favorites and your profile are stored on your device, not on our servers.
+- We do not show ads, we do not track you across other apps or websites, and we do not sell personal information.
+- Payments are handled by Apple or Google. We never see your card details.
 
-Ai Movie Finder does **not** create email/password accounts and does **not** use Google Sign-In or Firebase Authentication.
+## 1. Information we handle
 
-When you install the app, we generate a random **install ID** (a UUID stored on your device). We use this install ID to:
+### 1.1 Install ID (Support ID)
 
-- Enforce free-tier and Premium scan limits
-- Check Premium entitlement status
-- Associate optional review/debug submissions with a device install
+The app does not create accounts and does not use any sign-in service. On first launch it generates a random identifier, the **install ID**, and stores it on your device. In the app it is shown on the Profile screen as your **Support ID**.
 
-The install ID is not your Google Advertising ID. You can view and share it from the app’s Profile screen.
+We use the install ID to:
 
-### Uploaded, shared, or captured video content
+- Count scans against the free and Premium limits
+- Check whether Premium is active for your install
+- Find your records when you contact support
+- Link an optional review submission (section 1.7) to an install
 
-When you use the app to identify a movie or show, we may process:
+The install ID is not an advertising identifier and is not used for tracking.
 
-- A video clip you upload from your device
-- A video or link you share from TikTok, Instagram, Facebook, or another app
-- Shared text, caption text, comments, hashtags, or URL text related to the clip, when available
-- A short on-screen **screen recording** (see Section 3) when direct download of the shared clip fails and you approve Android’s screen capture permission
-- Video frames and, when needed for identification, cropped face/actor regions extracted from those frames
+### 1.2 Device check (iPhone only)
 
-This content is sent to our backend servers and may be forwarded to AI providers and movie-metadata services to return results such as title, poster, cast, description, rating, and where to watch.
+To stop the free scans from being reset by reinstalling the app, the iPhone app uses Apple's **DeviceCheck** service. The app asks iOS for a short-lived token and sends it to our server with scan and quota requests. Our server passes the token to Apple, which stores two bits of information for your device and our developer account: in practice, whether the free scans on that device have been used.
 
-### Social login session cookies (Instagram / Facebook)
+The token does not reveal your Apple Account, your name, or your device's serial number to us, and we cannot use it to identify you.
 
-For some Instagram or Facebook clips, the app may open an in-app WebView so you can log in to that platform. Session cookies from that login may be sent to our backend **only** so we can download the specific shared clip you asked us to analyze.
+### 1.3 Clips, links and related content
 
-We do **not** use those cookies to post, like, comment, message, spam, or otherwise act on your social account. Temporary cookie files used for download are deleted after the download attempt.
+When you ask the app to identify a title, it processes:
 
-### Local profile, history, and favorites
+- A video you pick from your photo library or files
+- A link or video you share to the app from TikTok, Instagram, Facebook, YouTube or another app
+- Text that comes with the shared item, such as a caption, hashtags or the link itself
+- Frames taken from the clip and, when needed to recognize an actor, cropped face regions from those frames
+- An actor name, if you add one to help the search
+- On Android only, in versions that offer it: a short screen recording, described in section 3
 
-On your device, the app may store:
+This content is sent to our server and, as needed, to the AI and movie-data providers listed in section 5, to return the title, poster, cast, description, ratings and where to watch.
 
-- Optional display name and profile photo you choose
-- Analyze history and favorites/watchlist items
-- Watch-country preference for streaming-provider results
+On iPhone, the app reads only the video you select. It does not have access to the rest of your photo library.
+
+### 1.4 Instagram and Facebook sign-in cookies
+
+Some Instagram and Facebook clips can only be downloaded while signed in. In that case the app can open that platform's own sign-in page inside the app. If you sign in, the session cookies from that page are used **only** to download the clip you asked us to analyze, and may be sent to our server for that download.
+
+We never see your password. We do not use those cookies to post, like, comment, message or take any other action on your account. Cookie files used on our server for a download are deleted after the download attempt.
+
+### 1.5 Data stored on your device
+
+The app stores the following on your device only:
+
+- An optional display name and profile photo
+- Your scan history and favorites
+- The country used for where-to-watch results
 - App settings and the install ID
 
-History and favorites are stored **locally on your device** (not in a cloud account). Clearing app data or uninstalling the app removes this local data.
+If you use the backup feature, the app writes your history and favorites to a file that you choose where to save. We do not receive that file.
 
-### Scan quota and Premium status
+Clearing the app's data or deleting the app removes this information.
 
-On our servers, we may store per–install ID:
+### 1.6 Scan counts and subscription status
 
-- Lifetime and daily scan counts and related dates
-- Whether Premium appears active (checked via RevenueCat using your install ID)
+For each install ID our server stores:
 
-### Payment and subscription information
+- Total and daily scan counts, with the related dates
+- Whether Premium is active, as reported by RevenueCat
 
-If you purchase Premium, payment processing is handled by **Google Play** and **RevenueCat**. We do not receive or store your full payment card details.
+If you buy Premium, the purchase is processed by **Apple** (iPhone) or **Google Play** (Android). **RevenueCat** manages the subscription status on our behalf, using your install ID as the customer identifier. We do not receive or store your card number or billing address.
 
-We may receive or store subscription-related status such as:
+### 1.7 Optional review submissions
 
-- Whether Premium is active
-- Entitlement status
-- Purchase/restore status
-- The app user ID linked to the purchase (your install ID)
+If a scan fails and you choose to send the link to us for review, we store the link, the platform, an optional reason, your install ID and the time. We use this to improve download and recognition reliability. Please do not submit links you do not want us to review.
 
-### Optional review / debugging links
+### 1.8 Technical information
 
-If a match fails and you choose **Send to MovieFinder for Analysis** (or a similar review option), we may log:
+To run and troubleshoot the service, our server logs technical information about requests, such as the time, the result of a scan (success or failure), error messages, the where-to-watch country sent with the request, and the IP address the request came from.
 
-- The URL you submit
-- Platform and an optional reason
-- Your install ID and a timestamp
+The app contains no advertising or third-party analytics software.
 
-This is used to improve download/identification reliability. Do not submit links you do not want us to review.
+## 2. Why we use this information
 
-### Technical information
+| Purpose | Information used | Legal basis (EU/EEA and UK) |
+|---|---|---|
+| Identify the movie or show you asked about | Clips, links, captions, frames, actor name | Performance of our contract with you |
+| Download the clip you shared | Link, and sign-in cookies if you provide them | Performance of our contract with you |
+| Apply free and Premium scan limits and prevent abuse | Install ID, scan counts, device check | Our legitimate interest in keeping the service fair and affordable |
+| Provide and restore Premium | Install ID, subscription status | Performance of our contract with you |
+| Keep the service working and fix faults | Technical information, review submissions | Our legitimate interest in running a reliable service |
+| Answer support requests | Install ID, your email and message | Our legitimate interest in supporting users |
 
-We may collect technical information needed to operate and debug the app, such as:
+We do not use your information for advertising or for automated decisions that have legal or similarly significant effects on you.
 
-- App activity related to scans (success/failure, analyze status)
-- Error messages and backend request status
-- Device/app interactions needed for screen capture
-- Watch-country preference sent with analyze requests
+## 3. Screen recording (Android only)
 
-## 2. How we use information
+On Android, when a shared clip cannot be downloaded directly, some versions of the app can ask for Android's screen capture permission. Recording starts only after you approve the system prompt, a notification is shown while it runs, and it captures a short segment of what is on screen so it can be analyzed. It is not used for background monitoring. The recording is treated like any other clip: it is sent to our server for identification and deleted after processing.
 
-We use collected information to:
+The iPhone app does not record your screen.
 
-- Identify movies or TV shows from clips, links, captions, and frames
-- Provide free and Premium scan limits and prevent abuse
-- Download the specific shared clip you asked to analyze (including via temporary social session cookies when needed)
-- Show results, cast, descriptions, ratings, and watch-provider information
-- Process Premium status and restore purchases
-- Improve reliability (including optional review-link submissions)
-- Provide user support when you contact us
+## 4. How long we keep information
 
-## 3. Screen capture permission
+| Information | Kept for |
+|---|---|
+| Clips, frames, screen recordings and download cookies | The duration of the scan. They are deleted when the scan finishes. If cleanup fails, leftover temporary files are removed during normal server maintenance. |
+| Scan counts for an install ID | As long as needed to apply the scan limits |
+| Device check bits (iPhone) | Held by Apple for your device until we reset them |
+| Review submissions | Until they have been reviewed, or until you ask us to delete them |
+| Server logs | A limited period, for troubleshooting and abuse prevention |
+| History, favorites, display name, profile photo | On your device, until you remove them or delete the app |
+| Subscription records | As kept by Apple, Google Play and RevenueCat under their own policies |
 
-When a shared TikTok, Instagram, or Facebook clip cannot be downloaded directly, Ai Movie Finder may ask for Android **screen capture** permission (MediaProjection).
+## 5. Who receives information
 
-Screen capture is used only after you approve the Android system permission prompt. A foreground notification is shown while capture is active. The app records a short segment of what is on screen so it can be uploaded for analysis. The app does **not** use screen capture for unrelated background monitoring, and capture is not used as continuous surveillance.
+We do not sell personal information and do not share it for advertising. We use the following service providers, each only for the purpose shown:
 
-The recorded clip is treated like other uploaded video: it is sent to our backend for AI identification and is intended to be deleted after processing when cleanup succeeds.
+| Provider | Purpose | What it receives |
+|---|---|---|
+| Railway | Server hosting | Scan requests, clips and frames while they are processed, install ID, scan counts |
+| xAI (Grok); OpenAI as a fallback | AI analysis | Frames, face crops, captions and related text |
+| TMDB; OMDb | Movie and TV data | Title searches and the where-to-watch country |
+| Apple | App Store distribution, payments, DeviceCheck (iPhone) | Purchase details, device check token |
+| Google Play | Distribution and payments (Android) | Purchase details |
+| RevenueCat | Subscription status | Install ID, purchase and entitlement status |
+| TikTok, Instagram, Facebook, YouTube | Fetching the clip you shared | The request for that clip, and your session cookies if you signed in |
 
-## 4. How long we keep data
+These providers handle information under their own terms and privacy policies. We may also disclose information if the law requires it or to protect the rights and safety of users and the service.
 
-- **Analysis media** (uploaded videos, screen captures, extracted frames, and temporary cookie jars used for download) is processed for the request and is intended to be deleted afterward when cleanup succeeds.
-- **Install ID quota records** (scan counts and related dates) may be kept on our servers while needed to enforce limits and operate the app.
-- **Optional review-link submissions** may be kept for debugging and product improvement until we remove them as part of normal operations or you request deletion.
-- **History, favorites, display name, and avatar** remain on your device until you clear them in the app, clear app data, or uninstall.
-- **Subscription records** are also governed by Google Play and RevenueCat retention practices.
+Movie Finder AI is not affiliated with TikTok, Instagram, Facebook or YouTube. This product uses the TMDB API but is not endorsed or certified by TMDB.
 
-Some technical logs or failed cleanup records may remain briefly for debugging, abuse prevention, or operational purposes.
+## 6. International transfers
 
-## 5. Sharing of information
+Our providers operate in several countries, including the United States, so your information may be processed outside the country where you live. Where the law requires it, transfers rely on safeguards such as the European Commission's standard contractual clauses or the provider's certification under an approved data-transfer framework.
 
-We do not sell your personal information.
+## 7. Your choices
 
-We may share or process information with service providers needed to run the app, including:
+You can:
 
-- **Our backend hosting** (for example, Railway), which receives analyze requests, videos/frames, optional social cookies for clip download, install ID, and related metadata
-- **AI analysis providers** (including xAI / Grok and, when used as a fallback, OpenAI), which may receive frames, face crops, captions, and related text to identify titles and actors
-- **TMDB** (The Movie Database) and related movie-data services (and optionally OMDb), to fetch metadata, posters, cast, and watch-provider information
-- **Google Play**, for Android distribution and payments
-- **RevenueCat**, for subscription entitlement management
-- **Social / media download helpers** needed to fetch the clip you shared (for example, platform CDNs or download tooling), using the URL you shared and, when applicable, temporary session cookies
+- Decide which clips you scan. Nothing is sent until you start a scan
+- Decline to sign in to Instagram or Facebook when asked
+- Decline the Android screen capture permission
+- Decline to submit a failed link for review
+- Remove items from history or favorites, or clear them, in the app
+- Cancel Premium at any time:
+  - **iPhone:** Settings → your name → Subscriptions
+  - **Android:** Google Play → Payments & subscriptions → Subscriptions
+- Ask us to delete the server-side data for your install (section 9)
 
-These services process data as needed to provide app functionality and according to their own terms and privacy policies.
+## 8. Your rights
 
-## 6. Third-party services
+Depending on where you live, you may have the right to:
 
-Ai Movie Finder may use third-party services, including but not limited to:
+- Ask for a copy of the information we hold about your install
+- Ask us to correct or delete it
+- Ask us to restrict how we use it, or object to our use of it
+- Receive it in a portable format
+- Complain to your local data protection authority
 
-- Google Play Billing
-- RevenueCat
-- xAI (Grok) and/or OpenAI for AI analysis
-- TMDB movie data services (and optionally OMDb)
-- Backend hosting (Railway)
-- TikTok, Instagram, and Facebook (via share links, WebView login, and/or media download), only as needed for the clip you asked to analyze
+To use any of these rights, email [moviefinderai.dev@gmail.com](mailto:moviefinderai.dev@gmail.com) and include your Support ID. Because the app has no accounts, the Support ID is the only way we can find your records. We answer within one month.
 
-Each third-party service may process information according to its own privacy and data-processing terms.
+## 9. Deleting your data
 
-## 7. User choices
+- **On your device:** clear history and favorites in the app, or delete the app.
+- **On our server:** email [moviefinderai.dev@gmail.com](mailto:moviefinderai.dev@gmail.com) with your Support ID (Profile screen; tap it to copy). We will delete the scan counts and any review submissions linked to it.
 
-Users can:
+We may keep limited information where needed to meet legal obligations or to prevent fraud and abuse of the free scans. Deleting the app does not cancel a subscription; cancel it as described in section 7.
 
-- Choose whether to share or upload a clip
-- Choose whether to log in via Instagram/Facebook WebView when prompted for download access
-- Choose whether to approve Android screen capture permission
-- Choose whether to submit a failed link for review
-- Delete history or favorites items inside the app when available
-- Cancel Premium subscriptions through Google Play
-- Contact us to request deletion of server-side data associated with your install ID
+## 10. Children
 
-## 8. Data deletion
+The app is not directed to children. It is not intended for anyone under 13, or under the minimum age required in their country for this kind of service. We do not knowingly collect personal information from children. If you believe a child has sent us information, contact us and we will delete it.
 
-Ai Movie Finder does not maintain a traditional user account. To request deletion of server-side data associated with your install, contact us at:
+## 11. Security
 
-**moviefinderai.dev@gmail.com**
+Traffic between the app and our server is encrypted with HTTPS, clips are kept only while they are being processed, and access to the server is restricted. No online service can guarantee complete security.
 
-Please include your **Install ID** from the app’s Profile screen so we can locate the correct records (quota and any review-link submissions).
+## 12. Changes to this policy
 
-We may retain limited information if required for legal, fraud-prevention, payment, security, or operational reasons. Local history and favorites are removed by clearing them in the app, clearing app data, or uninstalling. Subscription management and cancellation remain available through Google Play.
-
-## 9. Children
-
-Ai Movie Finder is not intended for children under the age required by Google Play and applicable local law. Users should not submit personal information if they are not old enough to use the app under applicable rules.
-
-## 10. Security
-
-We use reasonable technical and organizational measures to protect information in transit and on our servers (for example, HTTPS for API calls and limited retention of analysis media). However, no internet-based service can guarantee perfect security.
-
-## 11. International processing
-
-Data may be processed in countries other than the country where you live, depending on the infrastructure used by our hosting provider, Google, RevenueCat, AI providers, TMDB, and other app services.
-
-## 12. Changes to this Privacy Policy
-
-We may update this Privacy Policy from time to time. If we make significant changes, we may update the effective date or notify users through the app or store listing.
+We may update this policy as the app changes. The current version is always on this page, with its effective date at the top. If a change significantly affects how your information is used, we will also tell you in the app or on the store listing.
 
 ## 13. Contact
 
-For privacy questions or data deletion requests, contact:
+Questions, requests and complaints about privacy:
 
-**moviefinderai.dev@gmail.com**
+[moviefinderai.dev@gmail.com](mailto:moviefinderai.dev@gmail.com)
+
+See also: [Support](./support)
