@@ -4,7 +4,7 @@
 
 **Effective date:** November 19, 2026
 
-**Publisher:** Ai Movie Finder Studio
+**Publisher:** MovieFinder AI Studio
 
 **Contact:** [moviefinderai.dev@gmail.com](mailto:moviefinderai.dev@gmail.com)
 
