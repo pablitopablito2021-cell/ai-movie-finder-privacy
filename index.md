@@ -2,7 +2,7 @@
 
 **Movie Finder AI** for iPhone and **Ai Movie Finder** for Android
 
-**Effective date:** November 19, 2026
+**Effective date:** November 26, 2026
 
 **Publisher:** MovieFinder AI Studio
 
@@ -48,15 +48,15 @@ When you ask the app to identify a title, it processes:
 - Text that comes with the shared item, such as a caption, hashtags or the link itself
 - Frames taken from the clip and, when needed to recognize an actor, cropped face regions from those frames
 - An actor name, if you add one to help the search
-- On Android only, in versions that offer it: a short screen recording, described in section 3
+- In Android versions before 1.0.7 only: a short screen recording, described in section 3
 
 This content is sent to our server and, as needed, to the AI and movie-data providers listed in section 5, to return the title, poster, cast, description, ratings and where to watch.
 
 On iPhone, the app reads only the video you select. It does not have access to the rest of your photo library.
 
-### 1.4 Instagram and Facebook sign-in cookies
+### 1.4 TikTok, Instagram and Facebook sign-in cookies
 
-Some Instagram and Facebook clips can only be downloaded while signed in. In that case the app can open that platform's own sign-in page inside the app. If you sign in, the session cookies from that page are used **only** to download the clip you asked us to analyze, and may be sent to our server for that download.
+Some Instagram and Facebook clips, and on Android some TikTok clips, can only be downloaded while signed in. In that case the app can open that platform's own sign-in page inside the app. If you sign in, the session cookies from that page are used **only** to download the clip you asked us to analyze, and may be sent to our server for that download.
 
 We never see your password. We do not use those cookies to post, like, comment, message or take any other action on your account. Cookie files used on our server for a download are deleted after the download attempt.
 
@@ -105,9 +105,9 @@ The app contains no advertising or third-party analytics software.
 
 We do not use your information for advertising or for automated decisions that have legal or similarly significant effects on you.
 
-## 3. Screen recording (Android only)
+## 3. Screen recording (older Android versions only)
 
-On Android, when a shared clip cannot be downloaded directly, some versions of the app can ask for Android's screen capture permission. Recording starts only after you approve the system prompt, a notification is shown while it runs, and it captures a short segment of what is on screen so it can be analyzed. It is not used for background monitoring. The recording is treated like any other clip: it is sent to our server for identification and deleted after processing.
+The Android app does not record your screen from version 1.0.7 onward, and no longer asks for that permission. In earlier Android versions, when a shared clip could not be downloaded directly, the app could ask for Android's screen capture permission. Recording starts only after you approve the system prompt, a notification is shown while it runs, and it captures a short segment of what is on screen so it can be analyzed. It is not used for background monitoring. The recording is treated like any other clip: it is sent to our server for identification and deleted after processing.
 
 The iPhone app does not record your screen.
 
@@ -150,8 +150,8 @@ Our providers operate in several countries, including the United States, so your
 You can:
 
 - Decide which clips you scan. Nothing is sent until you start a scan
-- Decline to sign in to Instagram or Facebook when asked
-- Decline the Android screen capture permission
+- Decline to sign in to TikTok, Instagram or Facebook when asked
+- Decline the screen capture permission, in Android versions before 1.0.7
 - Decline to submit a failed link for review
 - Remove items from history or favorites, or clear them, in the app
 - Cancel Premium at any time:
